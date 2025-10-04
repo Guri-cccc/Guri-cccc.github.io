@@ -97,3 +97,75 @@ footer {
   color: #0d47a1;
   transform: scale(1.2);
 }
+
+#press {
+  margin-top: 60px;
+}
+
+.press-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.press-slide {
+  display: none;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.press-slide.active {
+  display: flex;
+}
+
+.press-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  flex: 1 1 calc(33% - 20px);
+  min-width: 250px;
+}
+
+.press-card strong {
+  color: #1E88E5;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.press-card p {
+  margin: 0 0 8px 0;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.press-card a {
+  color: #444;
+  font-size: 0.9em;
+}
+
+.press-card a:hover {
+  text-decoration: underline;
+  color: #0d47a1;
+}
+
+/* Navigation buttons */
+.press-nav {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.press-nav button {
+  background: #1E88E5;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.press-nav button:hover {
+  background: #0d47a1;
+}
+

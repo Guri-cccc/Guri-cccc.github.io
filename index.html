@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Gyuree Kang — Feild and AI Robotics Engineer</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -158,33 +159,52 @@
 
   <section id="press">
     <h2>Press Coverage</h2>
-    <ul>
-      <li>
-        <strong>[The Korea Times]</strong> 
-        “KAIST’s drone-tethered robot wins MBZIRC Maritime Challenge” (Apr 2024)
-        <a href="https://www.koreatimes.co.kr/" target="_blank">(link)</a>
-      </li>
-      <li>
-        <strong>[Euro News]</strong> 
-        “AI-driven manipulation robot developed by KAIST team” (Aug 2023)
-        <a href="https://www.euronews.com/next/2023/08/15/meet-pibot-the-humanoid-robot-that-can-safely-pilot-an-airplane-better-than-a-human" target="_blank">(link)</a>
-      </li>
-      <li>
-        <strong>[KAIST News]</strong> 
-        “Team KAIST to Race at CES 2022 Autonomous Challenge​” (Dec 2021)
-        <a href="https://www.kaist.ac.kr/newsen/html/news/?mode=V&mng_no=18090&skey=mayorlab&sval=%55%6e%6d%61%6e%6e%65%64%20%53%79%73%74%65%6d%20%52%65%73%65%61%72%63%68%20%47%72%6f%75%70&list_s_date=&list_e_date=&GotoPage=1" target="_blank">(link)</a>
-      </li>
-      <li>
-        <strong>[KAIST Breakthroughs]</strong> 
-        “A Drone-Multileg Robot team grabs objects on ship deck for 2024 MBZIRC Maritime Grand Challenge” (Feb 2025)
-        <a href="https://breakthroughs.kaist.ac.kr/sub02/view/id/4065" target="_blank">(link)</a>
-      </li>
-      <li>
-        <strong>[KAIST News]</strong> 
-        “KAIST Research Team Develops World’s First Humanoid Pilot, PIBOT​​” (Aug 2023)
-        <a href="https://www.kaist.ac.kr/newsen/html/news/?mode=V&mng_no=30710&skey=mayorlab&sval=%55%6e%6d%61%6e%6e%65%64%20%53%79%73%74%65%6d%20%52%65%73%65%61%72%63%68%20%47%72%6f%75%70&list_s_date=&list_e_date=&GotoPage=1" target="_blank">(link)</a>
-      </li>
-    </ul>
+
+    <!-- 슬라이드: PIBOT 관련 -->
+    <div class="press-slider">
+      <div class="press-slide active">
+        <div class="press-card">
+          <strong>[Korea Joongang Daily]</strong>
+          <p>“World-first robot pilot developed by Korean research team” (Feb 2025)</p>
+          <a href="https://koreajoongangdaily.joins.com/2023/07/19/business/tech/Korea-humanoid-pilot/20230719174419828.html" target="_blank">(link)</a>
+        </div>
+        <div class="press-card">
+          <strong>[Euro News]</strong>
+          <p>“Meet PIBOT, the humanoid robot that can pilot an airplane better than a human” (Aug 2023)</p>
+          <a href="https://www.euronews.com/next/2023/08/15/meet-pibot-the-humanoid-robot-that-can-safely-pilot-an-airplane-better-than-a-human" target="_blank">(link)</a>
+        </div>
+        <div class="press-card">
+          <strong>[KAIST News]</strong>
+          <p>“KAIST Research Team Develops World’s First Humanoid Pilot, PIBOT” (Aug 2023)</p>
+          <a href="https://www.kaist.ac.kr/newsen/html/news/?mode=V&mng_no=30710" target="_blank">(link)</a>
+        </div>
+      </div>
+
+      <!-- 슬라이드: MBZIRC 관련 -->
+      <div class="press-slide">
+        <div class="press-card">
+          <strong>[KAIST Breakthroughs]</strong>
+          <p>“A Drone-Multileg Robot team grabs objects on ship deck for 2024 MBZIRC Maritime Grand Challenge” (Feb 2025)</p>
+          <a href="https://breakthroughs.kaist.ac.kr/sub02/view/id/4065" target="_blank">(link)</a>
+        </div>
+      </div>
+
+      <!-- 슬라이드: 기타 -->
+      <div class="press-slide">
+        <div class="press-card">
+          <strong>[KAIST News]</strong>
+          <p>“Team KAIST to Race at CES 2022 Autonomous Challenge” (Dec 2021)</p>
+          <a href="https://www.kaist.ac.kr/newsen/html/news/?mode=V&mng_no=18090" target="_blank">(link)</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 네비게이션 버튼 -->
+    <div class="press-nav">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
   </section>
 
   <footer>
