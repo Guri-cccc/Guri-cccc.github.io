@@ -102,28 +102,31 @@ footer {
   margin-top: 60px;
 }
 
-.press-slider {
+.press-carousel {
   position: relative;
-  overflow: hidden;
-}
-
-.press-slide {
-  display: none;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.press-slide.active {
   display: flex;
+  align-items: center;
+}
+
+.press-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px 0;
 }
 
 .press-card {
-  background: #fff;
+  flex: 0 0 320px; /* 카드 하나의 폭 고정 */
+  background: #fdfdfd;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 15px;
-  flex: 1 1 calc(33% - 20px);
-  min-width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 16px;
+  transition: transform 0.2s;
+}
+
+.press-card:hover {
+  transform: translateY(-4px);
 }
 
 .press-card strong {
@@ -133,8 +136,8 @@ footer {
 }
 
 .press-card p {
-  margin: 0 0 8px 0;
   font-size: 0.95em;
+  margin: 0 0 8px 0;
   line-height: 1.4;
 }
 
@@ -148,24 +151,26 @@ footer {
   color: #0d47a1;
 }
 
-/* Navigation buttons */
-.press-nav {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.press-nav button {
+/* 좌우 버튼 */
+.press-btn {
   background: #1E88E5;
-  border: none;
   color: white;
-  padding: 8px 14px;
-  margin: 0 5px;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1.2em;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1em;
+  transition: 0.2s;
 }
 
-.press-nav button:hover {
+.press-btn:hover {
   background: #0d47a1;
 }
 
+.press-btn.left {
+  margin-right: 10px;
+}
+
+.press-btn.right {
+  margin-left: 10px;
+}

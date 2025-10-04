@@ -1,22 +1,10 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll(".press-slide");
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove("active");
-    if (i === index) slide.classList.add("active");
+<script>
+function scrollPress(direction) {
+  const container = document.getElementById("pressContainer");
+  const scrollAmount = 350; // 한 번에 넘길 거리(px)
+  container.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
   });
 }
-
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}
-
-function prevSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
-}
-
-// 초기화
-showSlide(currentSlide);
+</script>
