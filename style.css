@@ -106,71 +106,78 @@ footer {
   position: relative;
   display: flex;
   align-items: center;
+  overflow: visible;
 }
 
 .press-container {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   scroll-behavior: smooth;
   gap: 20px;
   padding: 10px 0;
 }
 
+.press-container::-webkit-scrollbar {
+  display: none; /* 스크롤바 숨김 */
+}
+
+/* ✅ 카드 전체가 링크 */
 .press-card {
-  flex: 0 0 320px; /* 카드 하나의 폭 고정 */
-  background: #fdfdfd;
-  border-radius: 8px;
+  flex: 0 0 320px;
+  background: #fff;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 16px;
-  transition: transform 0.2s;
 }
 
 .press-card:hover {
   transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
-.press-card strong {
+.press-content strong {
   color: #1E88E5;
   display: block;
   margin-bottom: 6px;
 }
 
-.press-card p {
-  font-size: 0.95em;
-  margin: 0 0 8px 0;
+.press-content p {
+  font-size: 0.9em;
+  margin: 0;
   line-height: 1.4;
 }
 
-.press-card a {
-  color: #444;
+.press-content strong {
+  color: #1E88E5;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.press-content p {
   font-size: 0.9em;
+  margin: 0;
+  line-height: 1.4;
 }
 
-.press-card a:hover {
-  text-decoration: underline;
-  color: #0d47a1;
-}
-
-/* 좌우 버튼 */
 .press-btn {
   background: #1E88E5;
   color: white;
   border: none;
-  padding: 8px 12px;
+  padding: 10px 14px;
   font-size: 1.2em;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .press-btn:hover {
   background: #0d47a1;
-}
-
-.press-btn.left {
-  margin-right: 10px;
-}
-
-.press-btn.right {
-  margin-left: 10px;
 }
