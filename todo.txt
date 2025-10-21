@@ -1,5 +1,2 @@
 todo 
 [] indy
-[] author list
-[] eduation
-[] introduction

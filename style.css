@@ -181,3 +181,65 @@ footer {
 .press-btn:hover {
   background: #0d47a1;
 }
+
+/* ✅ Education Section */
+#education {
+  margin-top: 60px;
+}
+
+/* #education h2 {
+  color: #1E88E5;
+  font-size: 1.6em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+  margin-bottom: 25px;
+  letter-spacing: 0.05em;
+} */
+
+.edu-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
+}
+
+.edu-left {
+  max-width: 70%;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.edu-left strong {
+  font-size: 1.1em;
+  color: #000;
+}
+
+.edu-left em {
+  font-style: italic;
+  color: #555;
+}
+
+.edu-left a {
+  color: #1E88E5;
+  text-decoration: none;
+}
+
+.edu-left a:hover {
+  text-decoration: underline;
+}
+
+.edu-left .thesis {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.95em;
+  color: #666;
+}
+
+.edu-right {
+  text-align: right;
+  font-size: 0.95em;
+  color: #444;
+  min-width: 250px;
+}
