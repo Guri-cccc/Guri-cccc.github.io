@@ -45,11 +45,19 @@ h2 {
   gap: 40px; /* ✅ 이미지와 텍스트 사이 여백 추가 */
 }
 
+/* ✅ Author 이름 스타일 */
+.authors {
+  font-size: 0.9em; /* 글자 약간 작게 */
+  color: #444;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
 /* ✅ GIF 스타일 */
 .project img {
   flex-shrink: 0;
-  width: 360px;            /* 기존 260 → 360 (더 큼) */
-  height: 202px;           /* 16:9 비율 유지 (360 * 9 / 16) */
+  width: 480px;            /* 기존 260 → 360 (더 큼) */
+  height: 270px;           /* 16:9 비율 유지 (360 * 9 / 16) */
   object-fit: cover;       /* 이미지 꽉 채우기 */
   border-radius: 8px;
   background-color: #b0c4de;
@@ -187,15 +195,6 @@ footer {
   margin-top: 60px;
 }
 
-/* #education h2 {
-  color: #1E88E5;
-  font-size: 1.6em;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 6px;
-  margin-bottom: 25px;
-  letter-spacing: 0.05em;
-} */
-
 .edu-entry {
   display: flex;
   justify-content: space-between;
@@ -242,4 +241,40 @@ footer {
   font-size: 0.95em;
   color: #444;
   min-width: 250px;
+}
+
+
+/* ✅ Header with profile image */
+header {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* 왼쪽 사진 */
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin-top: 70px;
+}
+
+/* 오른쪽 텍스트 부분 */
+.header-right {
+  flex: 1;
+}
+
+/* 이름 강조 */
+.header-right h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.4em;
+}
+
+/* 자기소개 문단 */
+.header-right p {
+  margin: 5px 0;
+  line-height: 1.6;
 }
