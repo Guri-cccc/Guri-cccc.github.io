@@ -252,16 +252,15 @@ header {
   margin-bottom: 40px;
 }
 
-/* 왼쪽 사진 */
 .profile-photo {
+  display: block;
   width: 160px;
   height: 160px;
-  object-fit: cover;
+  object-fit: cover;       /* 크기 고정 후 중앙 자르기 */
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  margin-top: 70px;
+  margin-top: 50px;        /* ✅ 살짝 아래로 내림 (70px → 20px) */
 }
-
 /* 오른쪽 텍스트 부분 */
 .header-right {
   flex: 1;
